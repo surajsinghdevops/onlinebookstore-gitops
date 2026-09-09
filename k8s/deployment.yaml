@@ -20,7 +20,7 @@ spec:
       containers:
         - name: onlinebookstore
 
-          image: logan7879/onlinebookstore:dec7990de1beabb417ff88dc55400b8437458f1b
+          image: logan7879/onlinebookstore:4c9cdeb1eaac8338c35b4f9216d5f86aa29a40aa
 
           ports:
             - containerPort: 8080
