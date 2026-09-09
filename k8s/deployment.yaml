@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: onlinebookstore
+  namespace: onlinebookstore
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: onlinebookstore
+
+  template:
+    metadata:
+      labels:
+        app: onlinebookstore
+
+    spec:
+      containers:
+        - name: onlinebookstore
+
+          image: logan7879/onlinebookstore:latest
+
+          ports:
+            - containerPort: 8080
